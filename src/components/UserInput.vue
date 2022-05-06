@@ -1,24 +1,15 @@
 <script setup lang="ts">
-import { ref } from "vue";
 defineProps<{
   atrName: string;
   idName: string;
-  val: number;
+  //  val: number;
 }>();
-// const val = ref(10);
 </script>
 
 <template>
-  <form class="col">
+  <form class="col" @submit.prevent="">
     <label :for="idName">{{ atrName }} </label>
-    <input
-      type="number"
-      :name="atrName"
-      :id="idName"
-      min="1"
-      max="20"
-      :value="val"
-    />
+    <slot>TODO input</slot>
   </form>
 </template>
 
