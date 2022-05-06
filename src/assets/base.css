@@ -55,7 +55,6 @@
 *::after {
   box-sizing: border-box;
   margin: 0;
-  position: relative;
   font-weight: normal;
 }
 
@@ -73,6 +72,9 @@ body {
   -moz-osx-font-smoothing: grayscale;
   text-transform: uppercase;
 }
+h1,h2,h3,h4{
+  text-align: center;
+}
 .flex{
   display: flex;
   gap: 3vh;
@@ -81,3 +83,18 @@ body {
   display: flex;
   flex-direction: column; 
 }
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr; 
+  grid-template-rows: min-content auto auto; 
+  gap: 0em 1em; 
+  grid-template-areas: 
+    "title title"
+    "left right"
+    "bot bot"; 
+  }
+  
+  .title { grid-area: title; }
+  .left { grid-area: left; }
+  .bot { grid-area: bot; }
+  .right { grid-area: right; }

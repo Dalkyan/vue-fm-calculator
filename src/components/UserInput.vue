@@ -2,7 +2,6 @@
 defineProps<{
   atrName: string;
   idName: string;
-  //  val: number;
 }>();
 </script>
 
