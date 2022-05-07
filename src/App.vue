@@ -10,7 +10,7 @@ const coach = useCoachStore();
 <template>
   <header>
     <div class="wrapper">
-      <HeaderComponent msg="Reactive coach rating calculator with VUE" />
+      <HeaderComponent msg="Reactive FM21 coach rating calculator" />
     </div>
   </header>
 
@@ -50,36 +50,36 @@ const coach = useCoachStore();
               />
             </UserInput>
             <div class="col">
-            <h3>GK&nbsp;coaching</h3>
-            <hr />
-            <UserInput atr-name="GK&nbsp;Distribution" id-name="gkd">
-              <input
-                id="gkd"
-                type="number"
-                min="1"
-                max="20"
-                v-model="coach.gkd"
-              />
-            </UserInput>
-            <UserInput atr-name="GK&nbsp;Handling" id-name="gkh">
-              <input
-                id="gkh"
-                type="number"
-                min="1"
-                max="20"
-                v-model="coach.gkh"
-              />
-            </UserInput>
-            <UserInput atr-name="GK&nbsp;Shot&nbsp;stopping" id-name="gks">
-              <input
-                id="gks"
-                type="number"
-                min="1"
-                max="20"
-                v-model="coach.gks"
-              />
-            </UserInput>
-          </div>
+              <h3>GK&nbsp;coaching</h3>
+              <hr />
+              <UserInput atr-name="GK&nbsp;Distribution" id-name="gkd">
+                <input
+                  id="gkd"
+                  type="number"
+                  min="1"
+                  max="20"
+                  v-model="coach.gkd"
+                />
+              </UserInput>
+              <UserInput atr-name="GK&nbsp;Handling" id-name="gkh">
+                <input
+                  id="gkh"
+                  type="number"
+                  min="1"
+                  max="20"
+                  v-model="coach.gkh"
+                />
+              </UserInput>
+              <UserInput atr-name="GK&nbsp;Shot&nbsp;stopping" id-name="gks">
+                <input
+                  id="gks"
+                  type="number"
+                  min="1"
+                  max="20"
+                  v-model="coach.gks"
+                />
+              </UserInput>
+            </div>
           </div>
           <div class="col">
             <h3>Coaching</h3>
@@ -162,7 +162,7 @@ header {
   line-height: 1.5;
 }
 input {
-  width: 3em;;
+  width: 3em;
 }
 a,
 .green {
@@ -194,6 +194,7 @@ a,
     display: flex;
     place-items: flex-start;
     flex-wrap: wrap;
+    flex-direction: column;
   }
 }
 </style>

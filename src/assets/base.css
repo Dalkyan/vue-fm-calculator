@@ -74,10 +74,12 @@ body {
 }
 h1,h2,h3,h4{
   text-align: center;
+  color: #7421CC;
 }
 .flex{
   display: flex;
   gap: 3vh;
+  justify-content: space-evenly;
 }
 .col{
   display: flex;
@@ -96,5 +98,5 @@ h1,h2,h3,h4{
   
   .title { grid-area: title; }
   .left { grid-area: left; }
-  .bot { grid-area: bot; }
   .right { grid-area: right; }
+  .bot { grid-area: bot; }
