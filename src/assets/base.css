@@ -19,6 +19,8 @@
   --vt-c-text-light-2: rgba(60, 60, 60, 0.66);
   --vt-c-text-dark-1: var(--vt-c-white);
   --vt-c-text-dark-2: rgba(235, 235, 235, 0.64);
+
+  --main-color: #0f7173;
 }
 
 /* semantic color variables for this project */
@@ -49,7 +51,7 @@
     --color-text: var(--vt-c-text-dark-2);
   }
 }
-
+  
 *,
 *::before,
 *::after {
@@ -74,7 +76,10 @@ body {
 }
 h1,h2,h3,h4{
   text-align: center;
-  color: #7421CC;
+  color: var(--main-color);
+}
+label{
+  color: var(--main-color);
 }
 .flex{
   display: flex;
@@ -100,3 +105,10 @@ h1,h2,h3,h4{
   .left { grid-area: left; }
   .right { grid-area: right; }
   .bot { grid-area: bot; }
+
+.stars{
+  width: fit-content;
+  background-color: var(--main-color);
+  border-radius: 8px;
+  margin: auto;
+}
