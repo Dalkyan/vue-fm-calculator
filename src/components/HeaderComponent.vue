@@ -11,10 +11,6 @@ defineProps<{
   <h1>{{ msg }}</h1>
 </template>
 <style scoped>
-h1 {
-  font-weight: 500;
-  font-size: 2rem;
-}
 p {
   font-size: 0.6em;
 }

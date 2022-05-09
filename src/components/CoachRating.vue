@@ -67,7 +67,7 @@ function printStars(computedRating: number) {
           <RatingStar :is-half="item.isHalf" :is-full="item.isFull" />
         </span>
       </div>
-      <h4>Handling & Distribution: {{ coach.getHandling }}</h4>
+      <h4>Handling: {{ coach.getHandling }}</h4>
       <div class="stars">
         <span
           v-for="(item, index) in printStars(coach.getHandling)"
