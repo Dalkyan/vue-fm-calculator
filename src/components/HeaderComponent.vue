@@ -5,7 +5,7 @@ defineProps<{
 </script>
 <template>
   <p>
-    made with <img class="logo" src="src\assets\logo.svg" alt="" />
+    made with <img class="logo" src="/logo.svg" />
     <span class="green">Vue 3</span>
   </p>
   <h1>{{ msg }}</h1>

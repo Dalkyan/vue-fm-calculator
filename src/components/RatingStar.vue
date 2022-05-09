@@ -1,6 +1,6 @@
 <template>
   <template v-if="isHalf">
-    <img src="src/assets/star-half.min.svg" />
+    <img src="/star-half.min.svg" />
   </template>
   <svg
     v-else
