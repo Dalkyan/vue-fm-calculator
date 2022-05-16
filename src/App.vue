@@ -129,9 +129,9 @@ const coach = useCoachStore();
                 v-model="coach.tac"
               />
             </UserInput>
-            <UserInput atr-name="technical" id-name="tech">
+            <UserInput atr-name="technical" id-name="tch">
               <input
-                id="tech"
+                id="tch"
                 type="number"
                 min="1"
                 max="20"
@@ -168,38 +168,48 @@ input {
   color: hsla(160, 100%, 37%, 1);
   transition: 0.4s;
 }
-  body {
-    display: flex;
-    flex-direction: column;
-    place-items: center;
-    font-size: small;
-    font-weight: bold;
-  }
-  header {
-    display: flex;
-    place-items: center;
-    text-align: center;
-    justify-content: center;
-  }
-  header .wrapper {
-    display: flex;
-    place-items: flex-start;
-    flex-wrap: wrap;
-    flex-direction: column;
-  }
+body {
+  display: flex;
+  flex-direction: column;
+  place-items: center;
+  font-size: small;
+  font-weight: bold;
+}
+header {
+  display: flex;
+  place-items: center;
+  text-align: center;
+  justify-content: center;
+}
+header .wrapper {
+  display: flex;
+  place-items: flex-start;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
 @media (min-width: 800px) {
-  body{
+  body,
+  header {
     line-height: 1.4;
+    padding-bottom: 3vh;
   }
   h1 {
-  font-weight: 500;
-  font-size: 2rem;
-}
-  .main {
-    display: flex;
-    flex-direction: row;
-    gap: 3vh;
-    justify-content: space-evenly;
+    font-weight: 500;
+    font-size: 2rem;
+  }
+  h2,
+  h3,
+  h4,
+  label {
+    font-size: 1.5rem;
+  }
+  @media (orientation: landscape) {
+    .main {
+      display: flex;
+      flex-direction: row;
+      gap: 3vh;
+      justify-content: space-evenly;
+    }
   }
 }
 </style>

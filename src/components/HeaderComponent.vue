@@ -12,9 +12,9 @@ defineProps<{
 </template>
 <style scoped>
 p {
-  font-size: 0.6em;
+  font-size: 0.8em;
 }
 .logo {
-  height: 0.5rem;
+  height: 0.6rem;
 }
 </style>

@@ -77,11 +77,10 @@ body {
 h1,h2,h3,h4{
   text-align: center;
   color: var(--main-color);
-  font-size: 13px;
 }
 h1 {
   font-weight: 500;
-  font-size: 16px;
+  font-size: 1.5rem;
 }
 label{
   color: var(--main-color);
