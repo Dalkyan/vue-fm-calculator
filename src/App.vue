@@ -15,7 +15,7 @@ const coach = useCoachStore();
   </header>
 
   <main>
-    <div class="flex">
+    <div class="main">
       <div>
         <h2>Attributes</h2>
         <div class="flex">
@@ -129,9 +129,9 @@ const coach = useCoachStore();
                 v-model="coach.tac"
               />
             </UserInput>
-            <UserInput atr-name="technical" id-name="tech">
+            <UserInput atr-name="technical" id-name="tch">
               <input
-                id="tech"
+                id="tch"
                 type="number"
                 min="1"
                 max="20"
@@ -154,47 +154,62 @@ const coach = useCoachStore();
   max-width: 1280px;
   margin: 0 auto;
   padding: 0.5rem;
-
-  font-weight: normal;
+  /* font-weight: normal; */
 }
 
 header {
-  line-height: 1.5;
+  line-height: 1;
 }
 input {
   width: 3em;
 }
-a,
 .green {
   text-decoration: none;
   color: hsla(160, 100%, 37%, 1);
   transition: 0.4s;
 }
-
-@media (hover: hover) {
-  a:hover {
-    background-color: hsla(160, 100%, 37%, 0.2);
-  }
+body {
+  display: flex;
+  flex-direction: column;
+  place-items: center;
+  font-size: small;
+  font-weight: bold;
 }
-
-@media (min-width: 1024px) {
-  body {
-    display: flex;
-    flex-direction: column;
-    place-items: center;
-  }
+header {
+  display: flex;
+  place-items: center;
+  text-align: center;
+  justify-content: center;
+}
+header .wrapper {
+  display: flex;
+  place-items: flex-start;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+@media (min-width: 800px) {
+  body,
   header {
-    display: flex;
-    place-items: center;
-    text-align: center;
-    justify-content: center;
+    line-height: 1.4;
+    padding-bottom: 3vh;
   }
-
-  header .wrapper {
-    display: flex;
-    place-items: flex-start;
-    flex-wrap: wrap;
-    flex-direction: column;
+  h1 {
+    font-weight: 500;
+    font-size: 2rem;
+  }
+  h2,
+  h3,
+  h4,
+  label {
+    font-size: 1.5rem;
+  }
+  @media (orientation: landscape) {
+    .main {
+      display: flex;
+      flex-direction: row;
+      gap: 3vh;
+      justify-content: space-evenly;
+    }
   }
 }
 </style>

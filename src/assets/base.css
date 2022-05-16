@@ -78,6 +78,10 @@ h1,h2,h3,h4{
   text-align: center;
   color: var(--main-color);
 }
+h1 {
+  font-weight: 500;
+  font-size: 1.5rem;
+}
 label{
   color: var(--main-color);
 }
