@@ -161,7 +161,7 @@ header {
   line-height: 1;
 }
 input {
-  width: 3em;
+  width: 5em;
 }
 .green {
   text-decoration: none;

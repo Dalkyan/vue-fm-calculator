@@ -85,6 +85,11 @@ h1 {
 label{
   color: var(--main-color);
 }
+button{
+  background-color: var(--vt-c-divider-dark-2);
+  color: var(--main-color);
+  cursor: pointer;
+}
 .flex{
   display: flex;
   gap: 3vh;
