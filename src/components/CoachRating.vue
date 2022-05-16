@@ -99,7 +99,7 @@ function printStars(computedRating: number) {
             <label>Attacking: {{ coach.getAttTact }}</label>
             <div class="stars">
               <span
-                v-for="(item, index) in printStars(coach.getDefTact)"
+                v-for="(item, index) in printStars(coach.getAttTact)"
                 :key="index"
               >
                 <RatingStar :is-half="item.isHalf" :is-full="item.isFull" />
