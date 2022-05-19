@@ -32,22 +32,38 @@ const validateInput = () => {
 
 const setValue = (value: number) =>
   (coach[props.idName as keyof CoachAttributes] = value);
+const titleTemplate = (v: number) => `Click to set input value to ${v}`;
 </script>
 <template>
   <form class="col" @submit.prevent @input="validateInput()">
     <label :for="idName">{{ atrName }} </label>
-    <slot>TODO input</slot>
-    <div>
-      <button @click="setValue(1)">1</button>
-      <button @click="setValue(5)">5</button>
-      <button @click="setValue(10)">10</button>
-      <button @click="setValue(15)">15</button>
-      <button @click="setValue(20)">20</button>
+    <div class="btn-flex">
+      <slot class="input">TODO input</slot>
+      <button class="btn1" @click="setValue(1)" :title="titleTemplate(1)">
+        1
+      </button>
+      <button class="btn5" @click="setValue(5)" :title="titleTemplate(5)">
+        5
+      </button>
+      <button class="btn10" @click="setValue(10)" :title="titleTemplate(10)">
+        10
+      </button>
+      <button class="btn15" @click="setValue(15)" :title="titleTemplate(15)">
+        15
+      </button>
+      <button class="btn20" @click="setValue(20)" :title="titleTemplate(20)">
+        20
+      </button>
     </div>
   </form>
 </template>
 <style>
 button {
-  width: min-content;
+  width: 2.2em;
+  box-shadow: 1px 1px indigo;
+}
+.btn-flex {
+  display: flex;
+  gap: 0;
 }
 </style>

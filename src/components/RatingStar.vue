@@ -1,11 +1,29 @@
 <template>
   <template v-if="isHalf">
-    <img src="/star-half.min.svg" />
+    <svg
+      width="3vh"
+      height="3vh"
+      viewBox="0 0 100 100"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M50 3.71L34.924 34.254 1.221 39.16l24.39 23.767-5.762 33.57L50 80.652V3.71z"
+        fill="#fbaf00"
+        stroke="#555"
+        stroke-width="1"
+      />
+      <path
+        d="M50 3.71v76.942l30.151 15.845-5.761-33.57L98.78 39.16l-33.704-4.907L50 3.71z"
+        fill="#555"
+        stroke="#555"
+        stroke-width="1"
+      />
+    </svg>
   </template>
   <svg
     v-else
-    width="16"
-    height="16"
+    width="3vh"
+    height="3vh"
     viewBox="0 0 100 100"
     xmlns="http://www.w3.org/2000/svg"
   >
@@ -25,8 +43,4 @@ defineProps<{
 }>();
 const blank = reactive({ fill: "#555" });
 const full = reactive({ fill: "#fbaf00" });
-// let isHalf = true;
-// let isFull = false;
 </script>
-
-<style lang="scss" scoped></style>
