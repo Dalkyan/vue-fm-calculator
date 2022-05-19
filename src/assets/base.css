@@ -21,6 +21,7 @@
   --vt-c-text-dark-2: rgba(235, 235, 235, 0.64);
 
   --main-color: #0f7173;
+  --accent-color: #4e0f73;
 }
 
 /* semantic color variables for this project */
@@ -49,6 +50,7 @@
 
     --color-heading: var(--vt-c-text-dark-1);
     --color-text: var(--vt-c-text-dark-2);
+    --accent-color: indigo;
   }
 }
   
@@ -74,16 +76,40 @@ body {
   -moz-osx-font-smoothing: grayscale;
   text-transform: uppercase;
 }
-h1,h2,h3,h4{
+h1,h2,h3{
   text-align: center;
-  color: var(--main-color);
+  color: var(--accent-color);
+  font-weight: bold;
 }
 h1 {
   font-weight: 500;
   font-size: 1.5rem;
 }
-label{
+label, h4{
   color: var(--main-color);
+  text-align: center;
+}
+button{
+  background-color: var(--vt-c-divider-dark-2);
+  color: var(--main-color);
+  cursor: pointer;
+  border-radius: 8px;
+  font-weight: bold;
+}
+button:hover{
+  background-color: var(--main-color);
+  color: var(--vt-c-black);
+}
+input[type="number"]{
+  font-size: 1.5em;
+  font-weight: bold;
+  width: 3em;
+  color: var(--accent-color);
+  border-radius: 8px;
+  text-align: center;
+}
+input[type=number]::-webkit-inner-spin-button {
+  opacity: 1;
 }
 .flex{
   display: flex;
@@ -111,7 +137,7 @@ label{
   .bot { grid-area: bot; }
 
 .stars{
-  width: fit-content;
+  width:max-content;
   background-color: var(--main-color);
   border-radius: 8px;
   margin: auto;

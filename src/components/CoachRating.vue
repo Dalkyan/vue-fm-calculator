@@ -82,7 +82,7 @@ function printStars(computedRating: number) {
       <hr />
       <div class="flex">
         <div>
-          <h4>Tactical</h4>
+          <h4 class="bold">Tactical:</h4>
           <hr />
           <div>
             <label>Defending: {{ coach.getDefTact }}</label>
@@ -99,7 +99,7 @@ function printStars(computedRating: number) {
             <label>Attacking: {{ coach.getAttTact }}</label>
             <div class="stars">
               <span
-                v-for="(item, index) in printStars(coach.getDefTact)"
+                v-for="(item, index) in printStars(coach.getAttTact)"
                 :key="index"
               >
                 <RatingStar :is-half="item.isHalf" :is-full="item.isFull" />
@@ -120,7 +120,7 @@ function printStars(computedRating: number) {
         </div>
         <hr />
         <div>
-          <h4>Technical</h4>
+          <h4 class="bold">Technical:</h4>
           <hr />
           <div>
             <label>Defending: {{ coach.getDefTech }}</label>
@@ -160,3 +160,8 @@ function printStars(computedRating: number) {
     </div>
   </div>
 </template>
+<style>
+.bold {
+  font-weight: 700;
+}
+</style>

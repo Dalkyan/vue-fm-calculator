@@ -13,7 +13,7 @@ const coach = useCoachStore();
       <HeaderComponent msg="Reactive FM21 coach rating calculator" />
     </div>
   </header>
-
+  <hr />
   <main>
     <div class="main">
       <div>
@@ -159,9 +159,6 @@ const coach = useCoachStore();
 
 header {
   line-height: 1;
-}
-input {
-  width: 3em;
 }
 .green {
   text-decoration: none;
